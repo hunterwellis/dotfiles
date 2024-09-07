@@ -211,8 +211,8 @@ bar{
 bindsym $mod+r mode "resize"
 
 exec --no-startup-id ~/.config/polybar/launch.sh
-exec feh --bg-scale ~/Pictures/wallpaper.png
-bindsym $mod+Shift+g exec feh --bg-scale ~/Pictures/wallpaper.png
+exec feh --bg-scale ~/.config/images/wallpaper.png
+bindsym $mod+Shift+g exec feh --bg-scale ~/.config/images/wallpaper.png
 bindsym $mod+g exec feh --bg-scale ~/Pictures/wallpaper_anime.jpg
 
 font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
