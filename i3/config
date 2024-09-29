@@ -206,7 +206,7 @@ bar{
 bindsym $mod+r mode "resize"
 
 exec --no-startup-id ~/.config/polybar/launch.sh
-exec feh --bg-scale ~/.config/images/wallpaper.png
+exec feh --bg-scale ~/.config/images/wallpaper.jpg
 bindsym $mod+Shift+g exec feh --bg-scale ~/.config/images/wallpaper.png
 bindsym $mod+g exec feh --bg-scale ~/Pictures/wallpaper_anime.jpg
 
