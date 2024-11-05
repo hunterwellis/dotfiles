@@ -44,5 +44,7 @@ call plug#begin()
  set conceallevel=1
  let g:tex_conceal='abdmg'
 
+ let g:python_highlight_all = 1
+
 call plug#end()
 
