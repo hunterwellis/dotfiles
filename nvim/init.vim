@@ -23,6 +23,11 @@ set ttyfast                 " Speed up scrolling in Vim
 set number relativenumber
 set nu rnu
 
+" Enable relative line numbers globally except for certain file types
+set relativenumber
+autocmd FileType nerdtree setlocal relativenumber
+autocmd FileType help,qf,terminal setlocal norelativenumber
+
 " Plugin Section
 call plug#begin()
  " Basic Plugins
@@ -33,11 +38,11 @@ call plug#begin()
  Plug 'scrooloose/nerdtree'
  Plug 'preservim/nerdcommenter'
  Plug 'mhinz/vim-startify'
+ Plug 'josephwright/etoolbox'
  Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
  " LaTex Support
  Plug 'lervag/vimtex'
- " let g:tex_flavor='latex' " vimtex typesetting engine
  let g:tex_flavor='xelatex'
  let g:vimtex_view_method='zathura'
  let g:vimtex_quickfix_mode=0

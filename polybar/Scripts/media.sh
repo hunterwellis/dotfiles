@@ -1,6 +1,6 @@
 #!/bin/bash
 
-song_info=$(playerctl metadata --format '{{artist}}-{{title}}')
+song_info=$(playerctl metadata --format '{{title}} ({{artist}})')
 if [ -n "$song_info" ]; then
 	echo "$song_info"
 else
