@@ -1,0 +1,6 @@
+# ~/.config/jgmenu/menu.csv
+
+Lock,       i3lock-fancy,             /usr/share/icons/Adwaita/symbolic/status/system-lock-screen-symbolic.svg 
+Logout,     pkill -KILL -u $USER,     /usr/share/icons/Adwaita/symbolic/actions/system-log-out-symbolic.svg
+Reboot,     systemctl reboot,         /usr/share/icons/Adwaita/symbolic/actions/system-reboot-symbolic.svg
+Shutdown,   systemctl poweroff,       /usr/share/icons/Adwaita/symbolic/actions/system-shutdown-symbolic.svg

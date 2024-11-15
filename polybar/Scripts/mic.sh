@@ -5,6 +5,7 @@ mic_source=$(pactl info | grep "Default Source:" | awk '{print $3}')
 if [ "$1" == "1" ]; then
   # Left mouse button clicked - toggle microphone mute status
   pactl set-source-mute "$mic_source" toggle
+    # Toggle status on left click
 fi
 
 # Get the microphone status (mute/unmute)
@@ -17,7 +18,9 @@ mic_percentage=$(awk -v volume="$mic_volume" 'BEGIN {split(volume, a, "%"); prin
 
 # Check the microphone status and set the output accordingly
 if [ "$mic_status" == "yes" ]; then
-   echo " Muted"
+   # Output muted icon with color for muted state
+   echo "%{F#707880} Muted%{F-}"
 else
-   echo " $mic_percentage%"
+   # Output unmuted icon with color for unmuted state
+   echo "%{F#ffffff} $mic_percentage%%{F-}"
 fi
