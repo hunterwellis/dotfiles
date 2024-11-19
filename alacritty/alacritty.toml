@@ -2,20 +2,19 @@
 TERM = "alacritty"
 
 [window]
-decorations = "full"
+decorations = "None"
 startup_mode = "Windowed"
 title = "Terminal"
-opacity = 0.9 
-
-  [window.padding]
-  x = 8
-  y = 15
+opacity = 0.95
+padding.x = 8
+padding.y = 8 
+dynamic_padding = false 
 
 [scrolling]
 history = 10_000
 
 [font]
-size = 13 
+size = 14
 
   [font.bold]
   style = "Normal"
@@ -33,9 +32,9 @@ black = "0x1d2430"
 red = "0xfa5ead"
 green = "0x00fbad"
 yellow = "0xffdf5f"
-blue = "0x5eadfc"
+cyan = "0x242d42"
 magenta = "0xfa5ead"
-cyan = "0x444DF2"
+blue = "0x5eadfc"
 white = "0xffffff"
 
 [colors.bright]
@@ -43,9 +42,9 @@ black = "0x1d2430"
 red = "0xfa5ead"
 green = "0x00fbad"
 yellow = "0xffdf5f"
-blue = "0x5eadfc"
-magenta = "0xfa5ead"
 cyan = "0x6a6f87"
+magenta = "0xfa5ead"
+blue = "0x5eadfc"
 white = "0xeff1f5"
 
 [selection]
