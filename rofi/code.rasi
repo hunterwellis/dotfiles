@@ -1,11 +1,3 @@
-/*
- * ROFI whale color theme
- *
- * Based on something Found in the Internet
- *
- * User: Contributors
- * Copyright: *!
- */
 
 configuration {
   font: "Noto Sans 12";
@@ -34,9 +26,9 @@ configuration {
   padding: 0;
   spacing: 0;
 
-  bg: #1a1e2a;
-  bg-alt: #212739;
-  fg: #6a6f87;
+  bg: #1a1a1a;
+  bg-alt: #3c3c3c;
+  fg: #3c3c3c;
   fg-alt: #ffffff;
 
   text-color: @fg-alt;

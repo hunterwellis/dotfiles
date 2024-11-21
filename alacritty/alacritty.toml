@@ -5,7 +5,6 @@ TERM = "alacritty"
 decorations = "full"
 startup_mode = "Windowed"
 title = "Terminal"
-opacity = 0.9 
 
   [window.padding]
   x = 8
@@ -25,28 +24,47 @@ size = 13
   y = -1
 
 [colors.primary]
-background = "0x1a1e2a"
-foreground = "0xffffff"
+background = "0x1e1e1e"
+foreground = "0xd4d4d4"
+
+[colors.cursor]
+text = "0x1e1e1e"
+cursor = "0xffffff"
+
+[colors.selection]
+text = "0xffffff"
+cursor = "0x264f78"
 
 [colors.normal]
-black = "0x1d2430"
-red = "0xfa5ead"
-green = "0x00fbad"
-yellow = "0xffdf5f"
-blue = "0x5eadfc"
-magenta = "0xfa5ead"
-cyan = "0x444DF2"
-white = "0xffffff"
+black = "0x1E1E1E" # Black (Dark Grey)
+red = "0xF44747" # Bright Red
+green = "0x00dc8c" # Green (Muted Green)
+yellow = "0xDCDCAA" # Yellow (Soft Yellow)
+blue = "0x569CD6" # Blue (Soft Blue)
+magenta = "0xC586C0" # Magenta (Soft Purple)
+cyan = "0x4EC9B0" # Cyan (Aqua Blue)
+white = "0xD4D4D4" # White (Light Grey)
 
 [colors.bright]
-black = "0x1d2430"
-red = "0xfa5ead"
-green = "0x00fbad"
-yellow = "0xffdf5f"
-blue = "0x5eadfc"
-magenta = "0xfa5ead"
-cyan = "0x6a6f87"
-white = "0xeff1f5"
+black = "0x3C3C3C" # Bright Black (Grey)
+red = "0xD16969" # Red (Muted Red)
+green = "0x11ef9d" # Bright Green
+yellow = "0xFFFFB3" # Bright Yellow
+blue = "0x9CDCFE" # Bright Blue
+magenta = "0xDDB6F2" # Bright Magenta
+cyan = "0x89DCEB" # Bright Cyan
+white = "0xFFFFFF" # Bright White
+
+# Define how bright and dim colors blend
+[colors.dim]
+black = "0x1A1A1A"
+red = "0x9B504F"
+green = "0x4A7038"
+yellow = "0xA8A06A"
+blue = "0x4A6A8F"
+magenta = "0x7E608A"
+cyan = "0x3E8875"
+white = "0xA0A0A0"
 
 [selection]
 save_to_clipboard = true
