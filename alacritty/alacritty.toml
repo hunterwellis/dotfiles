@@ -15,7 +15,7 @@ opacity = 0.9
 history = 10_000
 
 [font]
-size = 13 
+size = 10 
 
   [font.bold]
   style = "Normal"

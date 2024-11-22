@@ -50,6 +50,9 @@ floating_modifier $mod
 # start a terminal
 bindsym $mod+Return exec alacritty 
 
+# pull up jgmenu -- powermenu
+bindsym $mod+p exec jgmenu_run 
+
 # kill focused window
 bindsym $mod+Shift+q kill
 
