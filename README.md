@@ -13,5 +13,7 @@ Using:
 - polybar
 - rofi
 - zathura
+- dunst
+- jgmenu
 
 You may need to install nerdfonts symbols and whale theme (find them in the .tar files).

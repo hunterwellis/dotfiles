@@ -17,12 +17,12 @@ menu_border          = 1
 menu_halign          = left
 menu_valign          = top
 
-color_menu_bg        = #d16969 80
+color_menu_bg        = #ffffff 80
 color_menu_fg        = #e6e5df 100
 
 color_norm_fg        = #1a1e2a 100
 
-color_sel_bg         = #d4d4d4 100
+color_sel_bg         = #696969 100
 color_sel_fg         = #0D1918 100
 color_sel_border    = #1C2023 100
 
