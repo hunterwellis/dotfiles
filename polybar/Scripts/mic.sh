@@ -19,8 +19,8 @@ mic_percentage=$(awk -v volume="$mic_volume" 'BEGIN {split(volume, a, "%"); prin
 # Check the microphone status and set the output accordingly
 if [ "$mic_status" == "yes" ]; then
    # Output muted icon with color for muted state
-   echo "%{F#707880} Muted%{F-}"
+   echo "%{F#1E1E1E} Muted%{F-}"
 else
    # Output unmuted icon with color for unmuted state
-   echo "%{F#ffffff} $mic_percentage%%{F-}"
+   echo "%{F#1E1E1E} $mic_percentage%%{F-}"
 fi
