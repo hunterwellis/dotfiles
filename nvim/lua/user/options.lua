@@ -44,6 +44,10 @@ end
 
 -- add relative line numbers to netrw
 vim.g.NERDTreeShowLineNumbers=1
+vim.g.vimtex_view_method = 'zathura'
+vim.api.nvim_set_keymap(
+    "n", "gl", "<cmd>lua vim.diagnostic.open_float()<CR>", { noremap = true, silent = true }
+)
 -- vim.opt.shortmess = "ilmnrx"                        -- flags to shorten vim messages, see :help 'shortmess'
 vim.opt.shortmess:append "c"                           -- don't give |ins-completion-menu| messages
 vim.opt.iskeyword:append "-"                           -- hyphenated words recognized by searches

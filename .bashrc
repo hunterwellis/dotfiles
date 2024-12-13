@@ -118,5 +118,5 @@ fi
 
 # figlet -c -f ~/.local/share/fonts/figlet-fonts/3d.flf "welcome" | lolcat
 
-if (( RANDOM % 5 == 0 )); then fortune -a fortunes | cowsay -f stegosaurus; else neofetch; fi
+if (( RANDOM % 10 == 0 )); then fortune -a fortunes | cowsay -f stegosaurus; else neofetch --source ~/.config/neofetch/ascii/technic.txt --ascii_colors 4; fi
 

@@ -78,14 +78,14 @@ return packer.startup(function(use)
   use { "rafamadriz/friendly-snippets", commit = "2be79d8a9b03d4175ba6b3d14b082680de1b31b1" } -- a bunch of snippets to use
 
 	-- LSP
-	use { "neovim/nvim-lspconfig", commit = "f11fdff7e8b5b415e5ef1837bdcdd37ea6764dda" } -- enable LSP
-  use { "williamboman/mason.nvim", commit = "c2002d7a6b5a72ba02388548cfaf420b864fbc12"} -- simple to use language server installer
-  use { "williamboman/mason-lspconfig.nvim", commit = "0051870dd728f4988110a1b2d47f4a4510213e31" }
-	use { "jose-elias-alvarez/null-ls.nvim", commit = "c0c19f32b614b3921e17886c541c13a72748d450" } -- for formatters and linters
-  use { "RRethy/vim-illuminate", commit = "d6ca7f77eeaf61b3e6ce9f0e5a978d606df44298" }
+	use { "neovim/nvim-lspconfig" } -- enable LSP
+  use { "williamboman/mason.nvim" } -- simple to use language server installer
+  use { "williamboman/mason-lspconfig.nvim" }
+	use { "jose-elias-alvarez/null-ls.nvim" }-- for formatters and linters
+  use { "RRethy/vim-illuminate" }
 
 	-- Telescope
-	use { "nvim-telescope/telescope.nvim", commit = "76ea9a898d3307244dce3573392dcf2cc38f340f" }
+	use { "nvim-telescope/telescope.nvim" }
 
 	-- Treesitter
 	use {
@@ -98,7 +98,9 @@ return packer.startup(function(use)
 
   -- LaTeX
   use { "lervag/vimtex", commit = "9f6a5bb0a9c9f1542fe88dc07511ce8401242e2a" }
+-- install without yarn or npm
 
+  use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
