@@ -37,6 +37,7 @@ configuration {
 
 window {
   width: 700px;
+  border-radius: 5;
 }
 
 mainbox {

@@ -1,3 +1,5 @@
+require "nvchad.options"
+
 local options = {
   backup = false,                          -- creates a backup file
   clipboard = "unnamedplus",               -- allows neovim to access the system clipboard
@@ -11,7 +13,6 @@ local options = {
   pumheight = 5,                          -- pop up menu height
   showmode = false,                        -- we don't need to see things like -- INSERT -- anymore
   showtabline = 2,                         -- always show tabs
-  statusline = "%f%m%r%h%w [%Y] %F%=%4v,%4l %3p%% of %L", -- show name, edit status, language, and path of file
   smartcase = true,                        -- smart case
   smartindent = true,                      -- make indenting smarter again
   splitbelow = true,                       -- force all horizontal splits to go below current window
@@ -44,7 +45,6 @@ end
 
 -- add relative line numbers to netrw
 vim.g.NERDTreeShowLineNumbers=1
-vim.g.vimtex_view_method = 'zathura'
 vim.api.nvim_set_keymap(
     "n", "gl", "<cmd>lua vim.diagnostic.open_float()<CR>", { noremap = true, silent = true }
 )
@@ -54,3 +54,7 @@ vim.opt.iskeyword:append "-"                           -- hyphenated words recog
 vim.opt.formatoptions:remove({ "c", "r", "o" })        -- don't insert the current comment leader automatically for auto-wrapping comments using 'textwidth', hitting <Enter> in insert mode, or hitting 'o' or 'O' in normal mode.
 vim.opt.runtimepath:remove("/usr/share/vim/vimfiles")  -- separate vim plugins from neovim in case vim still in use
 
+-- add yours here!
+
+-- local o = vim.o
+-- o.cursorlineopt ='both' -- to enable cursorline!

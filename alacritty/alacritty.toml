@@ -1,10 +1,11 @@
 [env]
-TERM = "alacritty"
+TERM = "xterm-256color"
 
 [window]
 decorations = "full"
 startup_mode = "Windowed"
 title = "Terminal"
+opacity = 0.9
 
   [window.padding]
   x = 5
@@ -22,47 +23,46 @@ size = 12
 offset = {x = 0, y = -2}
 
 [colors.primary]
-background = "0x1e1e1e"
-foreground = "0xd4d4d4"
+background = "0x282828" # Gruvbox Dark Background
+foreground = "0xcccccc" # Gruvbox Light Foreground
 
 [colors.cursor]
-text = "0x1e1e1e"
-cursor = "0xffffff"
+text = "0x282828" # Cursor Text (Background)
+cursor = "0xcccccc" # Gruvbox Orange
 
 [colors.selection]
-text = "0xffffff"
-cursor = "0x264f78"
+text = "0x282828" # Selected Text Background
+cursor = "0x504945" # Gruvbox Selection Grey
 
 [colors.normal]
-black = "0x1E1E1E" # Black (Dark Grey)
-red = "0xF44747" # Bright Red
-green = "0x00dc8c" # Green (Muted Green)
-yellow = "0xDCDCAA" # Yellow (Soft Yellow)
-blue = "0x569CD6" # Blue (Soft Blue)
-magenta = "0xC586C0" # Magenta (Soft Purple)
-cyan = "0x4EC9B0" # Cyan (Aqua Blue)
-white = "0xD4D4D4" # White (Light Grey)
+black = "0x282828" # Gruvbox Background
+red = "0xcc241d" # Gruvbox Red
+green = "0x98971a" # Gruvbox Green
+yellow = "0xd79921" # Gruvbox Yellow
+blue = "0x458588" # Gruvbox Blue
+magenta = "0xb16286" # Gruvbox Purple
+cyan = "0x689d6a" # Gruvbox Aqua
+white = "0xa89984" # Gruvbox Light Grey
 
 [colors.bright]
-black = "0x3C3C3C" # Bright Black (Grey)
-red = "0xD16969" # Red (Muted Red)
-green = "0x11ef9d" # Bright Green
-yellow = "0xFFFFB3" # Bright Yellow
-blue = "0x9CDCFE" # Bright Blue
-magenta = "0xDDB6F2" # Bright Magenta
-cyan = "0x89DCEB" # Bright Cyan
-white = "0xFFFFFF" # Bright White
+black = "0x928374" # Gruvbox Grey
+red = "0xfb4934" # Gruvbox Bright Red
+green = "0xb8bb26" # Gruvbox Bright Green
+yellow = "0xfabd2f" # Gruvbox Bright Yellow
+blue = "0x83a598" # Gruvbox Bright Blue
+magenta = "0xd3869b" # Gruvbox Bright Purple
+cyan = "0x8ec07c" # Gruvbox Bright Aqua
+white = "0xebdbb2" # Gruvbox Bright White
 
-# Define how bright and dim colors blend
 [colors.dim]
-black = "0x1A1A1A"
-red = "0x9B504F"
-green = "0x4A7038"
-yellow = "0xA8A06A"
-blue = "0x4A6A8F"
-magenta = "0x7E608A"
-cyan = "0x3E8875"
-white = "0xA0A0A0"
+black = "0x32302f" # Dimmed Background
+red = "0x9d0006" # Dimmed Red
+green = "0x79740e" # Dimmed Green
+yellow = "0xb57614" # Dimmed Yellow
+blue = "0x076678" # Dimmed Blue
+magenta = "0x8f3f71" # Dimmed Purple
+cyan = "0x427b58" # Dimmed Aqua
+white = "0x7c6f64" # Dimmed Light Grey
 
 [selection]
 save_to_clipboard = true

@@ -34,8 +34,7 @@ bindsym $mod+Shift+x exec --no-startup-id i3lock-fancy
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
-
-exec_always --no-startup-id picom
+exec --no-startup-id /usr/local/bin/picom
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -115,7 +114,7 @@ bindsym $mod+a focus parent
 #bindsym $mod+d focus child
 
 gaps inner 6
-for_window [class=".*"] border pixel 2
+for_window [class=".*"] border pixel 0
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
@@ -170,7 +169,7 @@ set $urgent-bg-color     #ec6a88
 
 # window colors
 #                       border              background         text                 indicator
-client.focused          $bg-color           $bg-color          $text-color          $bg-color
+client.focused          $text-color           $text-color          $text-color          $bg-color
 client.unfocused        $inactive-bg-color $inactive-bg-color $inactive-text-color $inactive-text-color
 client.focused_inactive $inactive-bg-color $inactive-bg-color $inactive-text-color $inactive-bg-color
 client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color          $urgent-bg-color
@@ -207,8 +206,7 @@ bar{
 bindsym $mod+r mode "resize"
 
 exec --no-startup-id ~/.config/polybar/launch.sh
-exec feh --bg-scale ~/.config/images/wall.png
-
+exec feh --bg-scale ~/.config/images/wall.jpg
 
 font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 font pango:DejaVu Sans Mono 10
