@@ -206,8 +206,8 @@ bar{
 bindsym $mod+r mode "resize"
 
 exec --no-startup-id ~/.config/polybar/launch.sh
+exec --no-startup-id ~/.config/xborders/xborders -c ~/.config/xborders/config.json
 exec feh --bg-scale ~/.config/images/wall-color.jpg
 
 font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 font pango:DejaVu Sans Mono 10
-
