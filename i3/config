@@ -113,7 +113,7 @@ bindsym $mod+a focus parent
 # focus the child container
 #bindsym $mod+d focus child
 
-gaps inner 6
+gaps inner 10 
 for_window [class=".*"] border pixel 0
 
 # Define names for default workspaces for which we configure key bindings later on.
@@ -206,7 +206,7 @@ bar{
 bindsym $mod+r mode "resize"
 
 exec --no-startup-id ~/.config/polybar/launch.sh
-exec feh --bg-scale ~/.config/images/wall.jpg
+exec feh --bg-scale ~/.config/images/wall-color.jpg
 
 font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 font pango:DejaVu Sans Mono 10
