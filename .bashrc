@@ -87,6 +87,10 @@ fi
 # colored GCC warnings and errors
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
+# export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/hunter/.mujoco/mujoco210/bin
+# export LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libGLEW.so
+# export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/lib/nvidia
+
 # some more ls aliases
 alias ll='ls -alF'
 alias la='ls -A'
@@ -95,6 +99,11 @@ alias l='ls -CF'
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+
+# aliases
+alias vim="nvim"
+alias neofetch="neofetch --ascii_colors 6 --source ~/.config/neofetch/ascii/rose.ascii"
+alias typetest="~/dev/type-test/type-test"
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like
@@ -118,5 +127,5 @@ fi
 
 # figlet -c -f ~/.local/share/fonts/figlet-fonts/3d.flf "welcome" | lolcat
 
-if (( RANDOM % 10 == 0 )); then fortune -a fortunes | cowsay -f stegosaurus; else neofetch --source ~/.config/neofetch/ascii/technic.txt --ascii_colors 4; fi
+if (( RANDOM % 10 == 0 )); then fortune -a fortunes | cowsay -f stegosaurus; else neofetch; fi
 

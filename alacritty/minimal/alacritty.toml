@@ -1,0 +1,51 @@
+[env]
+TERM = "xterm-256color"
+
+[window]
+decorations = "full"
+startup_mode = "Windowed"
+title = "Terminal"
+opacity = 0.9
+
+  [window.padding]
+  x = 5
+  y = 5
+
+[scrolling]
+history = 10_000
+
+[font]
+normal = { family = "JetBrainsMono Nerd Font", style = "Regular" }
+bold = { family = "JetBrainsMono Nerd Font", style = "Bold" }
+italic = { family = "JetBrainsMono Nerd Font", style = "Italic" }
+bold_italic = { family = "JetBrainsMono Nerd Font", style = "Bold Italic" }
+size = 9
+offset = {x = 0, y = -2}
+
+[selection]
+save_to_clipboard = true
+
+[cursor]
+style = "Block"
+
+[colors]
+primary.background = "#000000"  # Black
+primary.foreground = "#FFFFFF"  # White
+
+normal.black = "#000000"   # Black
+normal.red = "#FF0000"     # Red
+normal.yellow = "#FFFF00"   # Yellow
+normal.green = "#00FF00"   # Yellow
+normal.blue = "#0000FF"    # Blue
+normal.magenta = "#FF00FF" # Red (used again for simplicity)
+normal.cyan = "#00FFFF"    # Blue (used again for simplicity)
+normal.white = "#FFFFFF"   # White
+
+bright.black = "#808080"   # Gray
+bright.red = "#FF4444"     # Red
+bright.yellow = "#FFFF44"   # Yellow
+bright.green = "#44FF44"   # Yellow
+bright.blue = "#4444FF"    # Blue
+bright.magenta = "#FF44FF" # Red (reused for minimalism)
+bright.cyan = "#44FFFF"    # Blue (reused for minimalism)
+bright.white = "#FFFFFF"   # White
