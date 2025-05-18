@@ -12,4 +12,5 @@ Dependencies:
 - rofi
 - dunst
 - jgmenu
+- xdotool
 
