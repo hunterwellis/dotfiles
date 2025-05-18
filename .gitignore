@@ -1,0 +1,17 @@
+*.*
+!.gitignore
+!/Thunar/
+!/alacritty/
+!/dunst/
+!/i3/
+!/images/
+!/jgmenu/
+!/nvim/
+!/picom/
+!/polybar/
+!/rofi/
+!/xboarders/
+!/zathura/
+!.bash_aliases
+!.bashrc
+!README.md
