@@ -3,7 +3,7 @@
     "border-radius": 15,
     "border-width": 3,
     "border-mode": "outside",
-    "disable-version-warning": false,
+    "disable-version-warning": true,
 
     "positive-x-offset": 0,
     "positive-y-offset": 0,

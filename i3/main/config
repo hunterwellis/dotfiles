@@ -236,7 +236,6 @@ bindcode --release 133 mode "mouse"
 
 exec --no-startup-id ~/.config/polybar/launch.sh
 exec --no-startup-id ~/.config/xborders/xborders -c ~/.config/xborders/config.json
-exec --no-startup-id ~/.config/i3/setbg.bash
 
 font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 font pango:DejaVu Sans Mono 10
