@@ -63,10 +63,17 @@ else
 fi
 unset color_prompt force_color_prompt
 
+# terminal vi mode
+set -o vi
+bind 'set show-mode-in-prompt on'
+bind 'set vi-ins-mode-string [INSERT]'
+bind 'set vi-cmd-mode-string [NORMAL]'
+bind -m vi-insert '"\C-l": clear-screen'
+
 # If this is an xterm set the title to user@host:dir
 case "$TERM" in
 xterm*|rxvt*)
-    PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1"
+    PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\] $PS1"
     ;;
 *)
     ;;
@@ -114,6 +121,10 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
+if [ -f ~/.config/picom/filters.bash ]; then
+    source ~/.config/picom/filters.bash
+fi
+
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
@@ -127,5 +138,6 @@ fi
 
 # figlet -c -f ~/.local/share/fonts/figlet-fonts/3d.flf "welcome" | lolcat
 
-if (( RANDOM % 10 == 0 )); then fortune -a fortunes | cowsay -f stegosaurus; else neofetch; fi
-
+# if (( RANDOM % 10 == 0 )); then fortune -a fortunes | cowsay -f stegosaurus; else neofetch; fi
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/lib/nvidia
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:~/.mujoco/mujoco210/bin
